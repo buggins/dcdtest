@@ -1,0 +1,12 @@
+{
+    "name": "dcdtest",
+    "description": "Test to reproduce DCD issue #407",
+
+    "targetName": "dcdtest",
+    "targetPath": "bin",
+    "targetType": "executable",
+
+    "dependencies": {
+        "dcd": "~>0.9.0"
+    }
+}

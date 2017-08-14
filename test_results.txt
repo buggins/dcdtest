@@ -1,0 +1,24 @@
+Performing "debug" build using dmd for x86.
+emsi_containers 0.5.3: target for configuration "library" is up to date.
+libdparse 0.7.1-beta.9: target for configuration "library" is up to date.
+dsymbol 0.2.7: target for configuration "library" is up to date.
+msgpack-d 1.0.0-beta.6: target for configuration "library" is up to date.
+dcd 0.9.0: target for configuration "library" is up to date.
+dcdtest ~master: building configuration "application"...
+Linking...
+To force a rebuild of up-to-date targets, run again with --force.
+Running .\bin\dcdtest.exe 
+test dir: D:\projects\d\dcdtest\test
+source file: D:\projects\d\dcdtest\test\main.d
+source: import testmodule;
+
+int main(string[] args) {
+    Test.run();
+}
+
+position: 59
+Calling findDeclaration()
+    result file: D:\projects\d\dcdtest\test\testmodule.d location: 80
+New thread created
+Calling findDeclaration()
+    result file:  location: 0
