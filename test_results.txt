@@ -8,17 +8,26 @@ dcdtest ~master: building configuration "application"...
 Linking...
 To force a rebuild of up-to-date targets, run again with --force.
 Running .\bin\dcdtest.exe 
-test dir: D:\projects\d\dcdtest\test
-source file: D:\projects\d\dcdtest\test\main.d
-source: import testmodule;
-
-int main(string[] args) {
-    Test.run();
-}
-
-position: 59
-Calling findDeclaration()
-    result file: D:\projects\d\dcdtest\test\testmodule.d location: 80
+Dumping interned strings before thread start
+Interned strings ptr=57D550
+name=int ptr=EB1AD0 interned.ptr=EB1AD0
+name=uint ptr=EB1AD3 interned.ptr=EB1AD3
+name=double ptr=EB1AD7 interned.ptr=EB1AD7
+name=idouble ptr=EB1ADD interned.ptr=EB1ADD
+name=float ptr=EB1AE4 interned.ptr=EB1AE4
+inside thread
+Interned strings ptr=57D550
+name=int ptr=EC5430 interned.ptr=EC5430
+name=uint ptr=EC5433 interned.ptr=EC5433
+name=double ptr=EC5437 interned.ptr=EC5437
+name=idouble ptr=EC543D interned.ptr=EC543D
+name=float ptr=EC5444 interned.ptr=EC5444
+exiting thread
 New thread created
-Calling findDeclaration()
-    result file:  location: 0
+Dumping interned strings after thread exit
+Interned strings ptr=57D550
+name=int ptr=EC5430 interned.ptr=EB1AD0
+name=uint ptr=EC5433 interned.ptr=EB1AD3
+name=double ptr=EC5437 interned.ptr=EB1AD7
+name=idouble ptr=EC543D interned.ptr=EB1ADD
+name=float ptr=EC5444 interned.ptr=EB1AE4
